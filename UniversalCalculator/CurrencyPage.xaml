@@ -1,0 +1,91 @@
+﻿<Page
+    x:Class="Calculator.CurrencyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid>
+		<StackPanel Background ="#E8E8E8" Margin="10">
+			<TextBlock x:Name="currencyHeadingTextBlock" Text="Currency Conversion Calculator" FontFamily="Arial Black" FontWeight="Bold" FontSize="50" HorizontalAlignment="Center" Margin="10"/>
+			<StackPanel Width="1130">
+			<StackPanel Orientation="Horizontal" Height="160" Margin="10" HorizontalAlignment="Center">
+				<StackPanel Orientation="Vertical"  Margin="10">
+					<TextBlock x:Name="amountHeadingTextBlock" Text="Amount $" FontSize="40" Margin="10"/>
+					<TextBox Name="amountTextBox" Width="350" Height="35"/>
+				</StackPanel>
+				<StackPanel Orientation="Vertical"  Margin="10">
+					<TextBlock x:Name="fromHeadingTextBlock" Text="From" FontSize="40" Margin="10"/>
+						<ComboBox x:Name="fromComboBox" Width="350" Height="35" SelectedIndex ="0">
+						<ComboBoxItem>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="USD - US Dollar"/>
+								<Image Source="USA.png" Width="24" Height="16" Margin="5"/>
+							</StackPanel>
+						</ComboBoxItem>
+						<ComboBoxItem>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="EUR - Euro"/>
+								<Image Source="EUR.png" Width="24" Height="16" Margin="5"/>
+							</StackPanel>
+						</ComboBoxItem>
+						<ComboBoxItem>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="GBP - British"/>
+								<Image Source="UK.png" Width="24" Height="16" Margin="5"/>
+							</StackPanel>
+						</ComboBoxItem>
+						<ComboBoxItem>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="INR - Indian Rupee"/>
+								<Image Source="INDIA.png" Width="24" Height="16" Margin="5"/>
+							</StackPanel>
+						</ComboBoxItem>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel Orientation="Vertical"  Margin="10">
+					<TextBlock x:Name="toHeadingTextBlock" Text="To" FontSize="40" Margin="10"/>
+						<ComboBox x:Name="toComboBox" Width="350" Height="35" SelectedIndex ="1">
+						<ComboBoxItem>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="USD - US Dollar"/>
+								<Image Source="USA.png" Width="24" Height="16" Margin="5"/>
+							</StackPanel>
+						</ComboBoxItem>
+						<ComboBoxItem>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="EUR - Euro"/>
+								<Image Source="EUR.png" Width="24" Height="16" Margin="5"/>
+							</StackPanel>
+						</ComboBoxItem>
+						<ComboBoxItem>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="GBP - British"/>
+								<Image Source="UK.png" Width="24" Height="16" Margin="5"/>
+							</StackPanel>
+						</ComboBoxItem>
+						<ComboBoxItem>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="INR - Indian Rupee"/>
+								<Image Source="INDIA.png" Width="24" Height="16" Margin="5"/>
+							</StackPanel>
+						</ComboBoxItem>
+					</ComboBox>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel Width="500" Height="300" HorizontalAlignment="Left" Margin="10">
+				<TextBlock Name="amountFromTextBlock" FontSize="25" Margin="5" ></TextBlock>
+				<TextBlock Name="resultTextBlock" FontSize="25" FontWeight="Bold" Foreground="Black" Margin="5"></TextBlock>
+				<TextBlock Name="convertionTextBlock" FontSize="25" Margin="5"></TextBlock>
+			</StackPanel>
+			</StackPanel>
+			<StackPanel Orientation="Vertical">
+				<Button x:Name="calculateButton" Content="Calculate Currency" Width="200" FontSize="20" HorizontalAlignment="Center" Margin="10" Click="calculateButton_Click"/>
+				<Button x:Name="exitButton" Content="Exit" Width="200" FontSize="20" HorizontalAlignment="Center" Margin="10" Click="exitButton_Click"/>
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</Page>
