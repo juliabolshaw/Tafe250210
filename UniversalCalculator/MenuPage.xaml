@@ -17,7 +17,7 @@
 				<Button x:Name="mathsCalButton" Content="Maths Calculator" FontSize="15" Width="170" HorizontalAlignment="Center" Margin="5"/>
 			</StackPanel>
 			<StackPanel>
-				<Button x:Name="mortgageCalButton" Content="Mortgage Calculator" FontSize="15" Width="170" HorizontalAlignment="Center" Margin="5"/>
+				<Button x:Name="mortgageCalButton" Content="Mortgage Calculator" FontSize="15" Width="170" HorizontalAlignment="Center" Margin="5" Click="mortgageCalButton_Click"/>
 			</StackPanel>
 			<StackPanel>
 				<Button x:Name="currencyConButton" Content="Currency Converter" FontSize="15" Width="170" HorizontalAlignment="Center" Margin="5"/>
