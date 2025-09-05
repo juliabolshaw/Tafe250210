@@ -29,7 +29,17 @@ namespace Calculator
 
 		private void mortgageCalButton_Click(object sender, RoutedEventArgs e)
 		{
-			Frame.Navigate(typeof(MortgagePage));
+			this.Frame.Navigate(typeof(MortgagePage));
         }
-    }
+
+		private void mathsCalButton_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(MainPage));
+        }
+
+		private void currencyConButton_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(CurrencyPage));
+		}
+	}
 }
