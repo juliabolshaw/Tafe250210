@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-		<StackPanel Height="400" Width="280" Background ="#E8E8E8">
+		<StackPanel Height="450" Width="280" Background ="#E8E8E8">
 			<Image Source="abacus.jpg" Width="150" Margin="15"/>
 			<TextBlock Text="Universal Calculator" FontFamily="Arial Black" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Margin="5"/>
 
@@ -21,6 +21,9 @@
 			</StackPanel>
 			<StackPanel>
 				<Button x:Name="currencyConButton" Content="Currency Converter" FontSize="15" Width="170" HorizontalAlignment="Center" Margin="5" Click="currencyConButton_Click"/>
+			</StackPanel>
+			<StackPanel>
+				<Button x:Name="tripCalButton" Content="Trip Calculator" FontSize="15" Width="170" HorizontalAlignment="Center" Margin="5" Click="tripCalButton_Click"/>
 			</StackPanel>
 			<StackPanel>
 				<Button x:Name="exitButton" Content="Exit" Width="170" FontSize="15" HorizontalAlignment="Center" Margin="35"/>
